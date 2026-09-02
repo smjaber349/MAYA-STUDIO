@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-   <meta name="description" content="মায়া ষ্টুডিও এন্ড কম্পিউটার — আউশকান্দি মধ্যবাজার, নবীগঞ্জ, হবিগঞ্জ। কম্পিউটার সেবা, গ্রাফিক্স ডিজাইন, NID-এর কাজ, প্রিন্ট, স্ক্যান ও অনলাইন সেবা।">
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description"
-content="মায়া ষ্টুডিও এন্ড কম্পিউটার - আউশকান্দি মধ্যবাজার, নবীগঞ্জ, হবিগঞ্জ। কম্পিউটার, গ্রাফিক্স ডিজাইন, অনলাইন, প্রিন্ট, স্ক্যান ও স্টুডিও সেবা।">
-
 <title>মায়া ষ্টুডিও এন্ড কম্পিউটার</title>
+
+<meta name="description" content="মায়া ষ্টুডিও এন্ড কম্পিউটার - আপনার বিশ্বস্ত ডিজিটাল সেবা কেন্দ্র। আউশকান্দি মধ্যবাজার, নবীগঞ্জ, হবিগঞ্জ।">
 
 <style>
 
 /* =========================
-   BASIC RESET
+   BASIC
 ========================= */
 
 *{
@@ -28,857 +27,600 @@ html{
 }
 
 body{
-    font-family:"Noto Sans Bengali",
-                "SolaimanLipi",
-                Arial,
-                sans-serif;
-
-    background:#f5f7fb;
+    font-family:"Noto Sans Bengali","SolaimanLipi",Arial,sans-serif;
+    background:#f5f8fc;
     color:#222;
     line-height:1.7;
 }
 
 a{
     text-decoration:none;
+    color:inherit;
 }
 
-img{
-    max-width:100%;
+.container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
 }
+
 
 /* =========================
    HEADER
 ========================= */
 
 header{
-    width:100%;
+    background:linear-gradient(135deg,#075e54,#087f5b);
+    color:white;
     position:sticky;
     top:0;
-    z-index:9999;
-
-    background:linear-gradient(
-        135deg,
-        #06154f,
-        #073f91,
-        #0877c9
-    );
-
-    color:white;
-
-    box-shadow:
-        0 5px 25px rgba(0,0,0,.25);
-
-    backdrop-filter:blur(10px);
+    z-index:5000;
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
 }
 
-.header-container{
-    max-width:1250px;
+.navbar{
+    width:90%;
+    max-width:1150px;
     margin:auto;
-
-    padding:12px 25px;
-
+    min-height:75px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-
-    gap:25px;
+    gap:20px;
 }
-
-/* LOGO */
 
 .logo-area{
     display:flex;
     align-items:center;
-    gap:13px;
+    gap:12px;
 }
 
 .logo-area img{
-    width:65px;
-    height:65px;
-
+    width:55px;
+    height:55px;
     object-fit:contain;
-
     background:white;
-
+    border-radius:50%;
     padding:4px;
-
-    border-radius:12px;
-
-    box-shadow:
-        0 5px 15px rgba(0,0,0,.3);
 }
 
-.logo-text h2{
-    font-size:22px;
-    line-height:1.3;
-}
-
-.logo-text span{
-    font-size:13px;
-    color:#ffd84d;
-}
-
-/* NAV */
-
-nav{
-    display:flex;
-    align-items:center;
-    gap:5px;
-}
-
-nav a{
-    color:white;
-
-    padding:9px 13px;
-
-    border-radius:8px;
-
+.logo-text{
+    font-size:20px;
     font-weight:bold;
+}
 
+.menu{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.menu a{
+    padding:9px 12px;
+    border-radius:8px;
     transition:.3s;
+    font-size:14px;
 }
 
-nav a:hover{
-    background:#ffffff22;
-    color:#ffd700;
+.menu a:hover{
+    background:rgba(255,255,255,.18);
 }
+
 
 /* =========================
    HERO
 ========================= */
 
 .hero{
-
-    min-height:720px;
-
+    min-height:550px;
     display:flex;
-    justify-content:center;
     align-items:center;
-
     text-align:center;
-
-    padding:80px 20px;
-
     color:white;
-
-    position:relative;
-
-    overflow:hidden;
-
     background:
-        linear-gradient(
-            rgba(3,15,55,.78),
-            rgba(3,15,55,.88)
-        ),
-        url("director.jpg");
-
+    linear-gradient(rgba(0,70,60,.78),rgba(0,60,80,.78)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=85");
     background-size:cover;
     background-position:center;
 }
 
-.hero::before{
-    content:"";
-
-    position:absolute;
-
-    width:450px;
-    height:450px;
-
-    border-radius:50%;
-
-    background:#00bfff22;
-
-    filter:blur(60px);
-
-    top:-180px;
-    left:-120px;
-}
-
-.hero::after{
-    content:"";
-
-    position:absolute;
-
-    width:400px;
-    height:400px;
-
-    border-radius:50%;
-
-    background:#ffd70015;
-
-    filter:blur(70px);
-
-    bottom:-180px;
-    right:-100px;
-}
-
 .hero-content{
-    position:relative;
-    z-index:2;
-
+    width:90%;
     max-width:900px;
-}
-
-.hero-logo{
-    width:130px;
-    height:130px;
-
-    object-fit:contain;
-
-    background:white;
-
-    padding:8px;
-
-    border-radius:25px;
-
-    margin-bottom:25px;
-
-    box-shadow:
-        0 10px 35px rgba(0,0,0,.4);
+    margin:auto;
 }
 
 .hero h1{
-    font-size:55px;
-
-    line-height:1.2;
-
-    margin-bottom:18px;
-
-    text-shadow:
-        0 5px 15px #0008;
-}
-
-.hero h3{
-    font-size:25px;
-
-    color:#ffd84d;
-
-    margin-bottom:10px;
+    font-size:48px;
+    margin-bottom:12px;
+    text-shadow:0 3px 8px rgba(0,0,0,.4);
 }
 
 .hero p{
-    font-size:19px;
-
-    line-height:2;
+    font-size:21px;
+    margin-bottom:25px;
 }
 
-/* BUTTONS */
+.hero-address{
+    font-size:17px !important;
+    margin-bottom:30px !important;
+}
 
 .hero-buttons{
-    margin-top:30px;
-
     display:flex;
     justify-content:center;
-
     flex-wrap:wrap;
-
-    gap:10px;
+    gap:12px;
 }
 
 .btn{
-    display:inline-flex;
-
-    align-items:center;
-    justify-content:center;
-
-    gap:8px;
-
-    padding:13px 27px;
-
-    border-radius:50px;
-
-    background:#ffd700;
-
-    color:#071952;
-
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:30px;
     font-weight:bold;
-
-    border:2px solid #ffd700;
-
     transition:.3s;
-
-    box-shadow:
-        0 7px 20px rgba(0,0,0,.25);
+    border:2px solid white;
 }
 
 .btn:hover{
-    transform:translateY(-4px);
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.35);
+    transform:translateY(-3px);
 }
 
 .btn-call{
     background:white;
-    border-color:white;
+    color:#075e54;
 }
 
 .btn-whatsapp{
-    background:#25d366;
+    background:#25D366;
+    border-color:#25D366;
     color:white;
-    border-color:#25d366;
 }
+
+.btn-map{
+    background:transparent;
+    color:white;
+}
+
 
 /* =========================
-   SECTION COMMON
+   SECTION
 ========================= */
 
-section{
-    scroll-margin-top:90px;
-}
-
 .section{
-    padding:80px 20px;
+    padding:75px 0;
 }
 
 .section-title{
     text-align:center;
-
-    color:#071952;
-
-    font-size:40px;
-
-    margin-bottom:15px;
+    font-size:34px;
+    color:#075e54;
+    margin-bottom:8px;
 }
 
 .section-subtitle{
     text-align:center;
-
     color:#666;
-
     max-width:700px;
-
-    margin:0 auto 45px;
+    margin:0 auto 40px;
 }
 
-/* =========================
-   WELCOME
-========================= */
-
-.welcome{
-    background:white;
-
-    text-align:center;
-
-    padding:80px 20px;
-}
-
-.welcome-box{
-    max-width:900px;
-
-    margin:auto;
-}
-
-.welcome h2{
-    color:#071952;
-
-    font-size:40px;
-
-    margin-bottom:20px;
-}
-
-.welcome p{
-    font-size:19px;
-
-    line-height:2;
-}
 
 /* =========================
    SERVICES
 ========================= */
 
 .services{
-    background:#f5f7fb;
+    background:white;
 }
 
 .service-container{
-
+    width:90%;
     max-width:1150px;
-
     margin:auto;
 
     display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:25px;
 }
 
 .service-card{
-
     background:white;
-
-    padding:35px 25px;
-
-    border-radius:20px;
-
+    border-radius:18px;
+    padding:30px 22px;
     text-align:center;
-
-    box-shadow:
-        0 8px 30px rgba(0,0,0,.08);
-
-    border:1px solid #eee;
-
-    transition:.35s;
-
+    box-shadow:0 5px 22px rgba(0,0,0,.09);
+    border:1px solid #e8edf3;
+    transition:.3s;
+    cursor:pointer;
     position:relative;
-
     overflow:hidden;
 }
 
-.service-card::before{
-
-    content:"";
-
-    position:absolute;
-
-    height:4px;
-
-    width:100%;
-
-    left:0;
-    top:0;
-
-    background:
-        linear-gradient(
-            90deg,
-            #071952,
-            #00aaff,
-            #ffd700
-        );
+.service-card::after{
+    content:"ক্লিক করে ছবি দেখুন";
+    display:block;
+    margin-top:15px;
+    color:#087f5b;
+    font-size:13px;
+    font-weight:bold;
 }
 
 .service-card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:
-        0 18px 40px rgba(0,0,0,.15);
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
 }
 
 .service-icon{
-
     width:75px;
     height:75px;
-
-    margin:5px auto 18px;
+    margin:0 auto 18px;
 
     border-radius:50%;
 
     display:flex;
-
     align-items:center;
     justify-content:center;
 
     font-size:38px;
 
-    background:#eef5ff;
+    background:#eef8f5;
 }
 
 .service-card h3{
-
-    color:#0b4da2;
-
-    font-size:23px;
-
-    margin-bottom:10px;
+    color:#075e54;
+    font-size:22px;
+    margin-bottom:8px;
 }
 
 .service-card p{
-
     color:#666;
-
-    line-height:1.8;
+    font-size:15px;
 }
+
+
+/* =========================
+   GALLERY POPUP
+========================= */
+
+.gallery-modal{
+    display:none;
+
+    position:fixed;
+    z-index:99999;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.82);
+
+    overflow-y:auto;
+
+    padding:25px 15px;
+}
+
+.gallery-box{
+    width:100%;
+    max-width:1050px;
+
+    margin:30px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    position:relative;
+
+    animation:popup .25s ease;
+}
+
+@keyframes popup{
+
+    from{
+        transform:scale(.85);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+.gallery-title{
+    text-align:center;
+    color:#075e54;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.gallery-close{
+    position:absolute;
+
+    right:15px;
+    top:5px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:#075e54;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    z-index:10;
+}
+
+.gallery-photos{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.gallery-photo{
+    width:100%;
+    height:230px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+
+.gallery-photo:hover{
+    transform:scale(1.03);
+}
+
+
+/* =========================
+   IMAGE VIEWER
+========================= */
+
+.image-viewer{
+    display:none;
+
+    position:fixed;
+    z-index:100000;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.94);
+
+    align-items:center;
+    justify-content:center;
+
+    padding:25px;
+}
+
+.image-viewer img{
+    max-width:95%;
+    max-height:90vh;
+
+    object-fit:contain;
+
+    border-radius:10px;
+}
+
+.viewer-close{
+    position:absolute;
+
+    right:25px;
+    top:15px;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+}
+
 
 /* =========================
    ABOUT
 ========================= */
 
 .about{
-
-    background:
-        linear-gradient(
-            135deg,
-            #eaf2ff,
-            #ffffff
-        );
+    background:#f5f8fc;
 }
 
-.about-container{
-
-    max-width:1000px;
-
+.about-box{
+    max-width:900px;
     margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 22px rgba(0,0,0,.08);
 
     text-align:center;
 }
 
-.about p{
-
-    font-size:19px;
-
-    line-height:2;
+.about-box p{
+    margin-bottom:12px;
 }
 
 .about-highlight{
+    color:#075e54;
+    font-weight:bold;
+    font-size:20px;
+}
 
-    margin-top:35px;
 
+/* =========================
+   GALLERY
+========================= */
+
+.main-gallery{
+    background:white;
+}
+
+.gallery-main-grid{
     display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:20px;
 }
 
-.highlight{
+.gallery-main-grid img{
+    width:100%;
+    height:250px;
 
-    background:white;
-
-    padding:25px;
+    object-fit:cover;
 
     border-radius:15px;
 
-    box-shadow:
-        0 8px 25px #0001;
+    box-shadow:0 5px 18px rgba(0,0,0,.1);
 }
 
-.highlight strong{
-
-    display:block;
-
-    color:#0b4da2;
-
-    font-size:25px;
-}
 
 /* =========================
    DIRECTOR
 ========================= */
 
 .director{
-
-    background:white;
-
-    text-align:center;
+    background:#f5f8fc;
 }
 
-.director-photo{
-
-    width:230px;
-    height:230px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:7px solid #0b4da2;
-
-    padding:5px;
-
-    background:white;
-
-    box-shadow:
-        0 10px 35px rgba(0,0,0,.2);
-
-    margin:10px auto 20px;
-
-    transition:.4s;
-}
-
-.director-photo:hover{
-
-    transform:scale(1.05);
-
-}
-
-.director h2{
-
-    color:#071952;
-
-    font-size:34px;
-
-    margin-bottom:5px;
-}
-
-.director h3{
-
-    color:#0b4da2;
-
-    font-size:22px;
-
-    margin-bottom:20px;
-}
-
-.director-badge{
-
-    display:inline-block;
-
-    padding:7px 20px;
-
-    border-radius:30px;
-
-    background:#eef5ff;
-
-    color:#0b4da2;
-
-    font-weight:bold;
-}
-
-/* =========================
-   GALLERY
-========================= */
-
-.gallery{
-
-    background:#f5f7fb;
-}
-
-.gallery-container{
-
-    max-width:1100px;
+.director-box{
+    max-width:850px;
 
     margin:auto;
 
-    display:grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap:25px;
-}
-
-.gallery-item{
-
     background:white;
 
-    border-radius:18px;
+    padding:35px;
 
-    overflow:hidden;
+    border-radius:20px;
 
-    box-shadow:
-        0 8px 25px #0002;
+    display:flex;
 
-    transition:.3s;
+    align-items:center;
+
+    gap:35px;
+
+    box-shadow:0 5px 22px rgba(0,0,0,.09);
 }
 
-.gallery-item:hover{
-
-    transform:translateY(-7px);
-
-    box-shadow:
-        0 15px 35px #0003;
-}
-
-.gallery-item img{
-
-    width:100%;
-
-    height:350px;
+.director-box img{
+    width:220px;
+    height:260px;
 
     object-fit:cover;
 
-    display:block;
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
-.gallery-caption{
+.director-info h3{
+    color:#075e54;
+    font-size:27px;
+    margin-bottom:8px;
+}
 
-    text-align:center;
+.director-info p{
+    margin:7px 0;
+}
 
-    padding:15px;
-
+.phone-link{
+    color:#087f5b;
     font-weight:bold;
-
-    color:#071952;
 }
+
 
 /* =========================
    CONTACT
 ========================= */
 
 .contact{
-
-    background:
-        linear-gradient(
-            135deg,
-            #06154f,
-            #073f91
-        );
-
-    color:white;
-
-    text-align:center;
+    background:white;
 }
 
-.contact .section-title{
-
-    color:white;
-}
-
-.contact .section-subtitle{
-
-    color:#ddd;
-}
-
-.contact-box{
-
-    max-width:850px;
+.contact-container{
+    max-width:900px;
 
     margin:auto;
 
     display:grid;
 
-    grid-template-columns:
-        repeat(2,1fr);
+    grid-template-columns:repeat(2,1fr);
 
-    gap:20px;
+    gap:25px;
 }
 
 .contact-card{
+    background:#f5f8fc;
 
-    background:#ffffff12;
-
-    border:1px solid #ffffff25;
-
-    padding:25px;
+    padding:30px;
 
     border-radius:18px;
 
-    backdrop-filter:blur(8px);
+    text-align:center;
 
-    transition:.3s;
-}
-
-.contact-card:hover{
-
-    transform:translateY(-5px);
-
-    background:#ffffff1c;
-}
-
-.contact-icon{
-
-    font-size:35px;
-
-    margin-bottom:8px;
+    border:1px solid #e6ebf0;
 }
 
 .contact-card h3{
-
-    color:#ffd700;
-
-    margin-bottom:5px;
+    color:#075e54;
+    margin-bottom:12px;
 }
 
 .contact-card p{
-
-    color:#eee;
+    margin:7px 0;
 }
 
 .contact-card a{
-
-    color:#ffd700;
-
+    color:#087f5b;
     font-weight:bold;
 }
 
-/* =========================
-   MAP BUTTON
-========================= */
-
-.map-button{
-
-    margin-top:35px;
-}
 
 /* =========================
    FOOTER
 ========================= */
 
 footer{
-
-    background:#02091f;
-
+    background:#064e45;
     color:white;
-
     text-align:center;
-
     padding:30px 15px;
 }
 
-footer h3{
-
-    color:#ffd700;
-
-    margin-bottom:8px;
-}
-
 footer p{
-
-    color:#bbb;
-
-    margin:4px;
+    margin:5px 0;
 }
 
-/* =========================
-   FLOATING BUTTONS
-========================= */
-
-.floating-buttons{
-
-    position:fixed;
-
-    right:20px;
-    bottom:20px;
-
-    z-index:999;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:10px;
+.footer-name{
+    font-size:20px;
+    font-weight:bold;
 }
 
-.float-btn{
-
-    width:55px;
-    height:55px;
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    font-size:25px;
-
-    color:white;
-
-    box-shadow:
-        0 5px 20px #0004;
-
-    transition:.3s;
-}
-
-.float-btn:hover{
-
-    transform:scale(1.1);
-}
-
-.float-call{
-
-    background:#0b4da2;
-}
-
-.float-whatsapp{
-
-    background:#25d366;
-}
 
 /* =========================
    MOBILE
@@ -886,288 +628,133 @@ footer p{
 
 @media(max-width:900px){
 
-    .header-container{
-
+    .navbar{
         flex-direction:column;
-
-        padding:12px 15px;
+        padding:12px 0;
     }
 
-    nav{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-    }
-
-    nav a{
-
-        font-size:14px;
-
-        padding:7px 9px;
-    }
-
-    .hero{
-
-        min-height:650px;
+    .menu{
+        gap:3px;
     }
 
     .hero h1{
-
-        font-size:39px;
-    }
-
-    .hero h3{
-
-        font-size:20px;
+        font-size:36px;
     }
 
     .service-container{
-
-        grid-template-columns:
-            repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
     }
 
-    .about-highlight{
-
-        grid-template-columns:
-            repeat(3,1fr);
+    .gallery-photos{
+        grid-template-columns:repeat(2,1fr);
     }
+
+    .gallery-main-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .director-box{
+        flex-direction:column;
+        text-align:center;
+    }
+
 }
 
 @media(max-width:600px){
 
-    .logo-area{
-
-        flex-direction:column;
-
-        text-align:center;
-    }
-
-    .logo-text h2{
-
-        font-size:19px;
+    .section{
+        padding:55px 0;
     }
 
     .hero{
-
-        min-height:650px;
-
-        padding:50px 15px;
-    }
-
-    .hero-logo{
-
-        width:105px;
-        height:105px;
+        min-height:500px;
     }
 
     .hero h1{
-
-        font-size:31px;
-    }
-
-    .hero h3{
-
-        font-size:17px;
-    }
-
-    .hero p{
-
-        font-size:16px;
-    }
-
-    .section{
-
-        padding:60px 15px;
-    }
-
-    .section-title{
-
-        font-size:31px;
-    }
-
-    .welcome h2{
-
         font-size:30px;
     }
 
-    .welcome p{
+    .hero p{
+        font-size:17px;
+    }
 
-        font-size:16px;
+    .menu a{
+        font-size:12px;
+        padding:6px 7px;
     }
 
     .service-container{
-
         grid-template-columns:1fr;
     }
 
-    .about-highlight{
-
-        grid-template-columns:1fr;
-    }
-
-    .gallery-container{
-
-        grid-template-columns:1fr;
-    }
-
-    .gallery-item img{
-
-        height:280px;
-    }
-
-    .contact-box{
-
-        grid-template-columns:1fr;
-    }
-
-    .director-photo{
-
-        width:200px;
-        height:200px;
-    }
-
-    .director h2{
-
-        font-size:28px;
-    }
-
-    .floating-buttons{
-
-        right:12px;
-        bottom:12px;
-    }
-
-}
-   .service-photo{
-    width:100%;
-    height:210px;
-    object-fit:cover;
-    display:block;
-}
-
-.service-content{
-    padding:25px;
-}
-
-.service-icon{
-    width:75px;
-    height:75px;
-    margin:-58px auto 15px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:38px;
-    background:white;
-    position:relative;
-    z-index:3;
-    box-shadow:0 5px 18px rgba(0,0,0,.15);
-}
-   .gallery-modal{
-    display:none;
-    position:fixed;
-    z-index:99999;
-    inset:0;
-    background:rgba(0,0,0,.82);
-    padding:20px;
-    overflow:auto;
-}
-
-.gallery-box{
-    max-width:1000px;
-    margin:40px auto;
-    background:white;
-    border-radius:18px;
-    padding:25px;
-    position:relative;
-}
-
-.gallery-box h2{
-    text-align:center;
-    margin:5px 0 25px;
-}
-
-.gallery-close{
-    position:absolute;
-    right:15px;
-    top:5px;
-    font-size:40px;
-    cursor:pointer;
-}
-
-.gallery-photos{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
-}
-
-.gallery-photos img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:12px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.gallery-photos img:hover{
-    transform:scale(1.03);
-}
-
-@media(max-width:700px){
-    .gallery-photos{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-@media(max-width:450px){
     .gallery-photos{
         grid-template-columns:1fr;
     }
+
+    .gallery-main-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-photo{
+        height:240px;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .director-box{
+        padding:25px 18px;
+    }
+
+    .director-box img{
+        width:190px;
+        height:230px;
+    }
+
+}
+
+
+/* =========================
+   CLICK EFFECT
+========================= */
+
+.service-card:active{
+    transform:scale(.98);
 }
 
 </style>
 
 </head>
 
+
 <body>
 
 
-<!-- ==========================================
+<!-- =========================
      HEADER
-========================================== -->
+========================= -->
 
 <header>
 
-<div class="header-container">
+<div class="navbar">
 
-    <div class="logo-area">
+    <a href="#home" class="logo-area">
 
-        <img src="logo.png"
-             alt="Maya Studio Logo">
+        <img src="logo.png" alt="মায়া ষ্টুডিও লোগো">
 
         <div class="logo-text">
-
-            <h2>
-                মায়া ষ্টুডিও এন্ড কম্পিউটার
-            </h2>
-
-            <span>
-                আপনার বিশ্বস্ত ডিজিটাল সেবা কেন্দ্র
-            </span>
-
+            মায়া ষ্টুডিও এন্ড কম্পিউটার
         </div>
 
-    </div>
+    </a>
 
 
-    <nav>
+    <nav class="menu">
 
         <a href="#home">হোম</a>
 
-        <a href="#services">সেবা</a>
+        <a href="#services">সেবাসমূহ</a>
 
         <a href="#about">আমাদের সম্পর্কে</a>
 
@@ -1184,61 +771,45 @@ footer p{
 </header>
 
 
-<!-- ==========================================
-     HERO
-========================================== -->
+
+<!-- =========================
+     HOME
+========================= -->
 
 <section class="hero" id="home">
 
 <div class="hero-content">
 
-    <img class="hero-logo"
-         src="logo.png"
-         alt="Maya Studio">
-
     <h1>
         মায়া ষ্টুডিও এন্ড কম্পিউটার
     </h1>
 
-    <h3>
-        আউশকান্দি মধ্যবাজার, নবীগঞ্জ, হবিগঞ্জ
-    </h3>
-
     <p>
+        আপনার বিশ্বস্ত ডিজিটাল সেবা কেন্দ্র
+    </p>
 
-        প্রোঃ স্বপন রঞ্জন দেব
-
-        <br>
-
-        📞 01716-939504
-
+    <p class="hero-address">
+        📍 আউশকান্দি মধ্যবাজার, নবীগঞ্জ, হবিগঞ্জ
     </p>
 
 
     <div class="hero-buttons">
 
-        <a class="btn"
-           href="#services">
-
-            💻 আমাদের সেবা
-
-        </a>
-
-
         <a class="btn btn-call"
            href="tel:01716939504">
-
             📞 কল করুন
-
         </a>
-
 
         <a class="btn btn-whatsapp"
            href="https://wa.me/8801716939504"
            target="_blank">
-
             💬 WhatsApp
+        </a>
 
+        <a class="btn btn-map"
+           href="https://www.google.com/maps/search/?api=1&query=Auskandi+Madhyabazar+Nabiganj+Habiganj"
+           target="_blank">
+            📍 Google Map
         </a>
 
     </div>
@@ -1248,229 +819,204 @@ footer p{
 </section>
 
 
-<!-- ==========================================
-     WELCOME
-========================================== -->
 
-<section class="welcome">
-
-<div class="welcome-box">
-
-    <h2>
-        আমাদের প্রতিষ্ঠানে আপনাকে স্বাগতম
-    </h2>
-
-    <p>
-
-        মায়া ষ্টুডিও এন্ড কম্পিউটারে আপনাকে
-        আন্তরিকভাবে স্বাগতম।
-
-        আপনার প্রয়োজনীয় বিভিন্ন কম্পিউটার,
-        গ্রাফিক্স ডিজাইন, অনলাইন সেবা,
-        প্রিন্ট, স্ক্যান, ছবি তোলা ও ছবি এডিটিংসহ
-        বিভিন্ন ডিজিটাল সেবা যত্ন ও দক্ষতার সাথে
-        প্রদান করা হয়।
-
-    </p>
-
-</div>
-
-</section>
-
-
-<!-- ==========================================
+<!-- =========================
      SERVICES
-========================================== -->
+========================= -->
 
-<section class="section services"
-         id="services">
+<section class="section services" id="services">
 
-<h2 class="section-title">
-    আমাদের সেবাসমূহ
-</h2>
-
-<p class="section-subtitle">
-
-    আপনার প্রয়োজনীয় ডিজিটাল ও কম্পিউটারভিত্তিক
-    বিভিন্ন কাজ নির্ভরযোগ্যভাবে সম্পন্ন করা হয়।
-
-</p>
-
-
-<div class="service-container">
-
-
-<!-- SERVICE 1 -->
-<div class="service-card" onclick="showGallery(
-'কম্পিউটার সেবা',
-[
-'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85'
-]
-)">
-    <div class="service-icon">💻</div>
-    <h3>কম্পিউটার সেবা</h3>
-    <p>কম্পিউটার ও ডিজিটাল সেবা</p>
-</div>
-
-
-<!-- SERVICE 2 -->
-<div class="service-card" onclick="showGallery(
-'গ্রাফিক্স ডিজাইন',
-[
-'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=1000&q=85'
-]
-)">
-    <div class="service-icon">🎨</div>
-    <h3>গ্রাফিক্স ডিজাইন</h3>
-    <p>ব্যানার, পোস্টার, লোগোসহ সকল ডিজাইন</p>
-</div>
-
-
-<!-- SERVICE 3 -->
-<div class="service-card" onclick="showGallery(
-'NID-এর কাজ',
-[
-'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85'
-]
-)">
-    <div class="service-icon">🪪</div>
-    <h3>NID-এর কাজ</h3>
-    <p>NID ও অনলাইন আবেদন সংক্রান্ত সেবা</p>
-</div>
-
-
-<!-- SERVICE 4 -->
-<div class="service-card" onclick="showGallery(
-'প্রিন্ট ও স্ক্যান',
-[
-'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1000&q=85'
-]
-)">
-    <div class="service-icon">🖨️</div>
-    <h3>প্রিন্ট ও স্ক্যান</h3>
-    <p>প্রিন্ট, ফটোকপি ও স্ক্যান</p>
-</div>
-
-
-<!-- SERVICE 5 -->
-<div class="service-card" onclick="showGallery(
-'অনলাইন সেবা',
-[
-'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=85'
-]
-)">
-    <div class="service-icon">🌐</div>
-    <h3>অনলাইন সেবা</h3>
-    <p>অনলাইন আবেদন ও ডিজিটাল সেবা</p>
-</div>
-
-
-<!-- SERVICE 6 -->
-<div class="service-card" onclick="showGallery(
-'ষ্টুডিও সেবা',
-[
-'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1606986628253-3b0c7b3a5b5a?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=1000&q=85',
-'https://images.unsplash.com/photo-1607462109225-6b64ae2dd3cb?auto=format&fit=crop&w=1000&q=85'
-]
-)">
-    <div class="service-icon">📸</div>
-    <h3>ষ্টুডিও সেবা</h3>
-    <p>ছবি তোলা, এডিট ও পাসপোর্ট ছবি</p>
-</div>
-
-
-<!-- PHOTO GALLERY POPUP -->
-<div id="galleryModal" class="gallery-modal">
-
-    <div class="gallery-box">
-
-        <span class="gallery-close" onclick="closeGallery()">×</span>
-
-        <h2 id="galleryTitle"></h2>
-
-        <div id="galleryPhotos" class="gallery-photos"></div>
-
-    </div>
-
-</div>
-
-
-<!-- ==========================================
-     ABOUT
-========================================== -->
-
-<section class="section about"
-         id="about">
-
-<div class="about-container">
+<div class="container">
 
     <h2 class="section-title">
-        মায়া ষ্টুডিও এন্ড কম্পিউটার
+        আমাদের সেবাসমূহ
     </h2>
 
-    <p>
-
-        আউশকান্দি মধ্যবাজারে অবস্থিত
-        মায়া ষ্টুডিও এন্ড কম্পিউটার
-        আপনাদের প্রয়োজনীয় কম্পিউটার,
-        গ্রাফিক্স ডিজাইন, ষ্টুডিও,
-        প্রিন্টিং, স্ক্যানিং এবং বিভিন্ন
-        ডিজিটাল সেবা প্রদানের জন্য কাজ করে যাচ্ছে।
-
+    <p class="section-subtitle">
+        আপনার প্রয়োজনীয় ডিজিটাল ও স্টুডিও সেবা সহজে ও নির্ভরযোগ্যভাবে পেতে আমাদের সাথে যোগাযোগ করুন।
     </p>
 
 
-    <div class="about-highlight">
+    <div class="service-container">
 
 
-        <div class="highlight">
+        <!-- SERVICE 1 -->
 
-            <strong>
+        <div class="service-card"
+             onclick="showGallery(
+             'কম্পিউটার সেবা',
+             [
+             'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85'
+             ])">
+
+            <div class="service-icon">
                 💻
-            </strong>
+            </div>
 
-            আধুনিক কম্পিউটার সেবা
+            <h3>
+                কম্পিউটার সেবা
+            </h3>
+
+            <p>
+                টাইপিং, কম্পিউটার সংক্রান্ত কাজ,
+                ডকুমেন্ট তৈরি ও প্রয়োজনীয়
+                ডিজিটাল সেবা।
+            </p>
 
         </div>
 
 
-        <div class="highlight">
 
-            <strong>
+        <!-- SERVICE 2 -->
+
+        <div class="service-card"
+             onclick="showGallery(
+             'গ্রাফিক্স ডিজাইন',
+             [
+             'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=1000&q=85'
+             ])">
+
+            <div class="service-icon">
                 🎨
-            </strong>
+            </div>
 
-            মানসম্মত ডিজাইন
+            <h3>
+                গ্রাফিক্স ডিজাইন
+            </h3>
+
+            <p>
+                ব্যানার, পোস্টার, লোগো,
+                ভিজিটিং কার্ড ও বিভিন্ন
+                ডিজাইনের কাজ।
+            </p>
 
         </div>
 
 
-        <div class="highlight">
 
-            <strong>
-                🤝
-            </strong>
+        <!-- SERVICE 3 -->
 
-            বিশ্বস্ত সেবা
+        <div class="service-card"
+             onclick="showGallery(
+             'NID-এর কাজ',
+             [
+             'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85'
+             ])">
+
+            <div class="service-icon">
+                🪪
+            </div>
+
+            <h3>
+                NID-এর কাজ
+            </h3>
+
+            <p>
+                জাতীয় পরিচয়পত্র সংক্রান্ত
+                প্রয়োজনীয় অনলাইন আবেদন ও
+                ডিজিটাল সহায়তা।
+            </p>
+
+        </div>
+
+
+
+        <!-- SERVICE 4 -->
+
+        <div class="service-card"
+             onclick="showGallery(
+             'প্রিন্ট ও স্ক্যান',
+             [
+             'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1000&q=85'
+             ])">
+
+            <div class="service-icon">
+                🖨️
+            </div>
+
+            <h3>
+                প্রিন্ট ও স্ক্যান
+            </h3>
+
+            <p>
+                ডকুমেন্ট প্রিন্ট, ফটোকপি,
+                স্ক্যান ও প্রয়োজনীয়
+                ডকুমেন্ট প্রস্তুত।
+            </p>
+
+        </div>
+
+
+
+        <!-- SERVICE 5 -->
+
+        <div class="service-card"
+             onclick="showGallery(
+             'অনলাইন সেবা',
+             [
+             'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=85'
+             ])">
+
+            <div class="service-icon">
+                🌐
+            </div>
+
+            <h3>
+                অনলাইন সেবা
+            </h3>
+
+            <p>
+                বিভিন্ন অনলাইন ফর্ম,
+                আবেদন ও প্রয়োজনীয়
+                ডিজিটাল কাজের সহায়তা।
+            </p>
+
+        </div>
+
+
+
+        <!-- SERVICE 6 -->
+
+        <div class="service-card"
+             onclick="showGallery(
+             'ষ্টুডিও সেবা',
+             [
+             'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1606986628253-3b0c7b3a5b5a?auto=format&fit=crop&w=1000&q=85',
+             'https://images.unsplash.com/photo-1607462109225-6b64ae2dd3cb?auto=format&fit=crop&w=1000&q=85'
+             ])">
+
+            <div class="service-icon">
+                📸
+            </div>
+
+            <h3>
+                ষ্টুডিও সেবা
+            </h3>
+
+            <p>
+                ছবি তোলা, ছবি এডিট,
+                পাসপোর্ট সাইজ ছবি এবং
+                বিভিন্ন ফটো সার্ভিস।
+            </p>
 
         </div>
 
@@ -1482,329 +1028,406 @@ footer p{
 </section>
 
 
-<!-- ==========================================
-     DIRECTOR
-========================================== -->
 
-<section class="section director"
-         id="director">
+<!-- =========================
+     ABOUT
+========================= -->
 
-<h2 class="section-title">
-    পরিচালনায়
-</h2>
+<section class="section about" id="about">
+
+<div class="container">
+
+    <h2 class="section-title">
+        আমাদের সম্পর্কে
+    </h2>
+
+    <p class="section-subtitle">
+        মায়া ষ্টুডিও এন্ড কম্পিউটার
+    </p>
 
 
-<img class="director-photo"
-     src="director.jpg"
-     alt="পরিচালক শাহ মো: জাবের আলী">
+    <div class="about-box">
 
+        <p class="about-highlight">
+            আপনার বিশ্বস্ত ডিজিটাল সেবা কেন্দ্র
+        </p>
 
-<h2>
-    শাহ মো: জাবের আলী
-</h2>
+        <p>
+            মায়া ষ্টুডিও এন্ড কম্পিউটার
+            আউশকান্দি মধ্যবাজার, নবীগঞ্জ, হবিগঞ্জে
+            আপনাদের প্রয়োজনীয় ডিজিটাল সেবা প্রদান করে আসছে।
+        </p>
 
-<h3>
-    📞 01734-315476
-</h3>
+        <p>
+            কম্পিউটার সেবা, গ্রাফিক্স ডিজাইন,
+            NID-এর কাজ, প্রিন্ট ও স্ক্যান,
+            অনলাইন সেবা এবং স্টুডিও সেবাসহ
+            বিভিন্ন প্রয়োজনীয় কাজ এখানে করা হয়।
+        </p>
 
-<div class="director-badge">
+        <p>
+            দ্রুত, সুন্দর ও বিশ্বস্ত সেবা দেওয়াই
+            আমাদের প্রধান লক্ষ্য।
+        </p>
 
-    পরিচালক
-    — মায়া ষ্টুডিও এন্ড কম্পিউটার
+    </div>
 
 </div>
 
 </section>
 
 
-<!-- ==========================================
+
+<!-- =========================
      GALLERY
-========================================== -->
+========================= -->
 
-<section class="section gallery"
-         id="gallery">
+<section class="section main-gallery" id="gallery">
 
-<h2 class="section-title">
-    আমাদের গ্যালারি
-</h2>
+<div class="container">
 
-<p class="section-subtitle">
+    <h2 class="section-title">
+        আমাদের গ্যালারি
+    </h2>
 
-    মায়া ষ্টুডিও এন্ড কম্পিউটারের
-    কিছু ছবি।
-
-</p>
+    <p class="section-subtitle">
+        আমাদের কাজ ও সেবার কিছু ছবি
+    </p>
 
 
-<div class="gallery-container">
+    <div class="gallery-main-grid">
 
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=85"
+             alt="কম্পিউটার সেবা">
 
-<div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1000&q=85"
+             alt="গ্রাফিক্স ডিজাইন">
 
-    <img src="logo.png"
-         alt="Maya Studio Logo">
-
-    <div class="gallery-caption">
-
-        মায়া ষ্টুডিও এন্ড কম্পিউটার
+        <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1000&q=85"
+             alt="প্রিন্ট সেবা">
 
     </div>
-
-</div>
-
-
-<div class="gallery-item">
-
-    <img src="director.jpg"
-         alt="Maya Studio">
-
-    <div class="gallery-caption">
-
-        মায়া ষ্টুডিও এন্ড কম্পিউটার
-
-    </div>
-
-</div>
-
 
 </div>
 
 </section>
 
 
-<!-- ==========================================
+
+<!-- =========================
+     DIRECTOR
+========================= -->
+
+<section class="section director" id="director">
+
+<div class="container">
+
+    <h2 class="section-title">
+        পরিচালক
+    </h2>
+
+    <p class="section-subtitle">
+        আমাদের প্রতিষ্ঠানের পরিচালক
+    </p>
+
+
+    <div class="director-box">
+
+        <img src="director.jpg"
+             alt="শাহ মো: জাবের আলী">
+
+
+        <div class="director-info">
+
+            <h3>
+                শাহ মো: জাবের আলী
+            </h3>
+
+            <p>
+                <strong>পরিচালক</strong>
+            </p>
+
+            <p>
+                📞 মোবাইল:
+                <a class="phone-link"
+                   href="tel:01734315476">
+                    01734-315476
+                </a>
+            </p>
+
+            <p>
+                📧 Gmail:
+                <a class="phone-link"
+                   href="mailto:sumondev19@gmail.com">
+                    sumondev19@gmail.com
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
      CONTACT
-========================================== -->
+========================= -->
 
-<section class="section contact"
-         id="contact">
+<section class="section contact" id="contact">
 
-<h2 class="section-title">
-    যোগাযোগ করুন
-</h2>
+<div class="container">
 
-<p class="section-subtitle">
+    <h2 class="section-title">
+        যোগাযোগ
+    </h2>
 
-    প্রয়োজনীয় যেকোনো সেবার জন্য
-    আমাদের সাথে যোগাযোগ করুন।
-
-</p>
-
-
-<div class="contact-box">
-
-
-<!-- ADDRESS -->
-
-<div class="contact-card">
-
-    <div class="contact-icon">
-        📍
-    </div>
-
-    <h3>
-        ঠিকানা
-    </h3>
-
-    <p>
-
-        আউশকান্দি মধ্যবাজার,
-        নবীগঞ্জ, হবিগঞ্জ
-
+    <p class="section-subtitle">
+        প্রয়োজনীয় সেবার জন্য আমাদের সাথে যোগাযোগ করুন
     </p>
 
-</div>
+
+    <div class="contact-container">
 
 
-<!-- OWNER -->
+        <div class="contact-card">
 
-<div class="contact-card">
+            <h3>
+                🏢 প্রতিষ্ঠানের তথ্য
+            </h3>
 
-    <div class="contact-icon">
-        👤
+            <p>
+                <strong>
+                    মায়া ষ্টুডিও এন্ড কম্পিউটার
+                </strong>
+            </p>
+
+            <p>
+                📍 আউশকান্দি মধ্যবাজার,
+                নবীগঞ্জ, হবিগঞ্জ
+            </p>
+
+            <p>
+                👤 প্রোঃ স্বপন রঞ্জন দেব
+            </p>
+
+            <p>
+                📞
+                <a href="tel:01716939504">
+                    01716-939504
+                </a>
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-card">
+
+            <h3>
+                📞 সরাসরি যোগাযোগ
+            </h3>
+
+            <p>
+                পরিচালক:
+                শাহ মো: জাবের আলী
+            </p>
+
+            <p>
+                📞
+                <a href="tel:01734315476">
+                    01734-315476
+                </a>
+            </p>
+
+            <p>
+                📧
+                <a href="mailto:sumondev19@gmail.com">
+                    sumondev19@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <a href="https://wa.me/8801716939504"
+                   target="_blank">
+                    💬 WhatsApp-এ যোগাযোগ করুন
+                </a>
+            </p>
+
+        </div>
+
+
     </div>
-
-    <h3>
-        প্রোঃ
-    </h3>
-
-    <p>
-        স্বপন রঞ্জন দেব
-    </p>
-
-</div>
-
-
-<!-- PHONE -->
-
-<div class="contact-card">
-
-    <div class="contact-icon">
-        📞
-    </div>
-
-    <h3>
-        ফোন
-    </h3>
-
-    <p>
-
-        <a href="tel:01716939504">
-
-            01716-939504
-           <p>
-    📧 Gmail:
-    <a href="mailto:sumondev19@gmail.com">
-        sumondev19@gmail.com
-    </a>
-</p>
-
-        </a>
-
-    </p>
-
-</div>
-
-
-<!-- DIRECTOR -->
-
-<div class="contact-card">
-
-    <div class="contact-icon">
-        👨‍💼
-    </div>
-
-    <h3>
-        পরিচালনায়
-    </h3>
-
-    <p>
-        শাহ মো: জাবের আলী
-        <br>
-
-        <a href="tel:01734315476">
-
-            01734-315476
-
-        </a>
-
-    </p>
-
-</div>
-
-
-</div>
-
-
-<!-- MAP -->
-
-<div class="map-button">
-
-<a class="btn"
-   href="https://www.google.com/maps/search/?api=1&query=আউশকান্দি+মধ্যবাজার+নবীগঞ্জ+হবিগঞ্জ"
-   target="_blank">
-
-    📍 Google Map-এ লোকেশন দেখুন
-
-</a>
 
 </div>
 
 </section>
 
 
-<!-- ==========================================
+
+<!-- =========================
      FOOTER
-========================================== -->
+========================= -->
 
 <footer>
 
-<h3>
-    মায়া ষ্টুডিও এন্ড কম্পিউটার
-</h3>
+    <p class="footer-name">
+        মায়া ষ্টুডিও এন্ড কম্পিউটার
+    </p>
 
-<p>
-    আউশকান্দি মধ্যবাজার, নবীগঞ্জ, হবিগঞ্জ
-</p>
+    <p>
+        আপনার বিশ্বস্ত ডিজিটাল সেবা কেন্দ্র
+    </p>
 
-<p>
-    📞 01716-939504
-</p>
+    <p>
+        📍 আউশকান্দি মধ্যবাজার, নবীগঞ্জ, হবিগঞ্জ
+    </p>
 
-<p>
-    © 2026 Maya Studio & Computer
-</p>
-
-<p>
-    সর্বস্বত্ব সংরক্ষিত
-</p>
+    <p>
+        © 2026 Maya Studio & Computer
+    </p>
 
 </footer>
 
 
-<!-- ==========================================
-     FLOATING BUTTONS
-========================================== -->
 
-<div class="floating-buttons">
+<!-- =========================
+     SERVICE GALLERY POPUP
+========================= -->
 
+<div id="galleryModal"
+     class="gallery-modal">
 
-<a class="float-btn float-call"
-   href="tel:01716939504"
-   title="Call">
+    <div class="gallery-box">
 
-    📞
+        <span class="gallery-close"
+              onclick="closeGallery()">
+            ×
+        </span>
 
-</a>
+        <h2 id="galleryTitle"
+            class="gallery-title">
+        </h2>
 
+        <div id="galleryPhotos"
+             class="gallery-photos">
+        </div>
 
-<a class="float-btn float-whatsapp"
-   href="https://wa.me/8801716939504"
-   target="_blank"
-   title="WhatsApp">
-
-    💬
-
-</a>
-
+    </div>
 
 </div>
-   <script>
+
+
+
+<!-- =========================
+     FULL IMAGE VIEWER
+========================= -->
+
+<div id="imageViewer"
+     class="image-viewer"
+     onclick="closeImage()">
+
+    <span class="viewer-close">
+        ×
+    </span>
+
+    <img id="viewerImage"
+         src=""
+         alt="ছবি">
+
+</div>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
 
 function showGallery(title, photos){
 
     document.getElementById("galleryTitle").innerText = title;
 
-    let box = document.getElementById("galleryPhotos");
+    const gallery =
+        document.getElementById("galleryPhotos");
 
-    box.innerHTML = "";
+    gallery.innerHTML = "";
+
 
     photos.forEach(function(photo){
 
-        let img = document.createElement("img");
+        const img =
+            document.createElement("img");
 
         img.src = photo;
 
+        img.className = "gallery-photo";
+
         img.alt = title;
 
-        box.appendChild(img);
+        img.onclick = function(event){
+
+            event.stopPropagation();
+
+            openImage(photo);
+
+        };
+
+        gallery.appendChild(img);
 
     });
 
-    document.getElementById("galleryModal").style.display = "block";
+
+    document.getElementById("galleryModal")
+            .style.display = "block";
+
+    document.body.style.overflow = "hidden";
+
 }
+
 
 
 function closeGallery(){
 
-    document.getElementById("galleryModal").style.display = "none";
+    document.getElementById("galleryModal")
+            .style.display = "none";
+
+    document.body.style.overflow = "auto";
 
 }
 
 
+
+function openImage(photo){
+
+    document.getElementById("viewerImage")
+            .src = photo;
+
+    document.getElementById("imageViewer")
+            .style.display = "flex";
+
+}
+
+
+
+function closeImage(){
+
+    document.getElementById("imageViewer")
+            .style.display = "none";
+
+}
+
+
+
 window.onclick = function(event){
 
-    let modal = document.getElementById("galleryModal");
+    const modal =
+        document.getElementById("galleryModal");
 
     if(event.target === modal){
 
@@ -1812,16 +1435,28 @@ window.onclick = function(event){
 
     }
 
-}
+};
+
+
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "Escape"){
+
+            closeGallery();
+
+            closeImage();
+
+        }
+
+    }
+);
+
 
 </script>
 
 
 </body>
 </html>
-<p>
-📧 Gmail:
-<a href="mailto:sumondev19@gmail.com">
-sumondev19@gmail.com
-</a>
-</p>
